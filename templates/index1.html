@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Tools</title>
+  </head>
+  <body>
+    <form action={% url 'index' %} method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <input type="file" name="image" multiple>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
